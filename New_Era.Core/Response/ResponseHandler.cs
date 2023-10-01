@@ -7,14 +7,14 @@
         {
             this.localizer = localizer;
         }
-        public ResponseModel<T> Success<T>(T data)
+        public ResponseModel<T> Success<T>(T data, string? message = null)
         {
             return new ResponseModel<T>()
             {
                 Data = data,
                 IsSuccess = true,
                 StatusCode = HttpStatusCode.OK,
-                Message = localizer[LanguageKeys.GetData]
+                Message = message ?? localizer[LanguageKeys.GetData]
             };
         }
         public ResponseModel<string> Delete()

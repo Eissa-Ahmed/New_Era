@@ -20,8 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\StudentFeature\Command\Handler\" />
-    <Folder Include="Features\StudentFeature\Command\Model\" />
     <Folder Include="Features\StudentFeature\Command\Validation\" />
   </ItemGroup>
 

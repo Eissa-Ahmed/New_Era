@@ -1,4 +1,5 @@
-﻿using New_Era.Data.Router;
+﻿using New_Era.Core.Features.StudentFeature.Command.Model;
+using New_Era.Data.Router;
 
 namespace New_Era.API.Controllers
 {
@@ -16,6 +17,19 @@ namespace New_Era.API.Controllers
         public async Task<IActionResult> GetByIdAsync(int id)
         {
             var data = await mediator.Send(new GetByIdAsyncStudentQuery(id));
+            return result(data);
+        }
+
+        [HttpPost(Router.StudentRouter.AddAsync)]
+        public async Task<IActionResult> AddAsync(AddStudentAsyncCommand model)
+        {
+            var data = await mediator.Send(model);
+            return result(data);
+        }
+        [HttpPut(Router.StudentRouter.UpdateAsync)]
+        public async Task<IActionResult> UpdateAsync(UpdateStudentAsyncCommand model)
+        {
+            var data = await mediator.Send(model);
             return result(data);
         }
     }

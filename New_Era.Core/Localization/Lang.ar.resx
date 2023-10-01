@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddAsync" xml:space="preserve">
+    <value>تم اضافة العنصر بنجاح</value>
+  </data>
   <data name="BadRequest" xml:space="preserve">
     <value>خطأ, طلب فاشل</value>
   </data>
@@ -134,5 +137,11 @@
   </data>
   <data name="NotFound" xml:space="preserve">
     <value>خطأ, لا يوجد</value>
+  </data>
+  <data name="PhoneIsExist" xml:space="preserve">
+    <value>رقم الهاتف مستخدم من قبل</value>
+  </data>
+  <data name="UpdateAsync" xml:space="preserve">
+    <value>تم التعديل بنجاح</value>
   </data>
 </root>

@@ -8,5 +8,8 @@
         public const string BadRequest = "BadRequest";
         public const string CreatedData = "CreatedData";
         public const string IdNotFount = "IdNotFount";
+        public const string AddAsync = "AddAsync";
+        public const string UpdateAsync = "UpdateAsync";
+        public const string PhoneIsExist = "PhoneIsExist";
     }
 }

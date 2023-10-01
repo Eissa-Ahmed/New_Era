@@ -6,6 +6,8 @@ namespace New_Era.Core.Mapper.StudentMapper
         public StudentProfile()
         {
             GetAllAsyncMapper();
+            AddStudentAsyncMapper();
+            UpdateStudentAsyncMapper();
         }
     }
 }
