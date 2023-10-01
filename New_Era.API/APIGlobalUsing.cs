@@ -1,0 +1,12 @@
+﻿global using MediatR;
+global using Microsoft.AspNetCore.Localization;
+global using Microsoft.AspNetCore.Mvc;
+global using New_Era.API;
+global using New_Era.API.Controllers.Bases;
+global using New_Era.Core;
+global using New_Era.Core.Features.StudentFeature.Query.Model;
+global using New_Era.Core.Response;
+global using New_Era.Infrastructure;
+global using New_Era.Services;
+global using System.Globalization;
+global using System.Net;
